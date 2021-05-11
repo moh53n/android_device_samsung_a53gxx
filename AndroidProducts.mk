@@ -10,8 +10,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    device/samsung/a5ultexx/lineage_a5ultexx.mk
+    device/samsung/a53gxx/lineage_a53gxx.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_a5ultexx-userdebug \
-    lineage_a5ultexx-eng
+    lineage_a53gxx-userdebug \
+    lineage_a53gxx-eng

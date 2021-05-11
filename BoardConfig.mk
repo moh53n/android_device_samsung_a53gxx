@@ -24,10 +24,10 @@
 -include device/samsung/a5-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/a5ultexx/BoardConfigVendor.mk
+-include vendor/samsung/a53gxx/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a5ulte,a5ultexx,a5lte,a53gxx,a53g,a5ltexx,a5ltedd,a5ultektt,a5ultelgt,a5lteub,a5ultekx,a5ulteskt,a5ultebmc,a5ultedv,a5ltezt
+#TARGET_OTA_ASSERT_DEVICE := a5ulte,a5ultexx,a5lte,a53gxx,a53g,a5ltexx,a5ltedd,a5ultektt,a5ultelgt,a5lteub,a5ultekx,a5ulteskt,a5ultebmc,a5ultedv,a5ltezt
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
