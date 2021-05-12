@@ -37,7 +37,7 @@
 #include "property_service.h"
 
 using android::base::GetProperty;
-using android::init::property_set;
+using android::base::SetProperty;
 
 void property_override(const std::string& name, const std::string& value)
 {
@@ -63,15 +63,15 @@ void property_override_triple(const std::string& product_prop, const std::string
 }
 
 void init_dsds() {
-    property_set("ro.multisim.set_audio_params", "true");
-    property_set("ro.multisim.simslotcount", "2");
-    property_set("persist.radio.multisim.config", "dsds");
+    SetProperty("ro.multisim.set_audio_params", "true");
+    SetProperty("ro.multisim.simslotcount", "2");
+    SetProperty("persist.radio.multisim.config", "dsds");
 }
 
 void vendor_load_properties()
 {
     // Init a dummy BT MAC address, will be overwritten later
-    property_set("ro.boot.btmacaddr", "00:00:00:00:00:00");
+    SetProperty("ro.boot.btmacaddr", "00:00:00:00:00:00");
 
     std::string bootloader = GetProperty("ro.bootloader","");
 
